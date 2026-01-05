@@ -2,47 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Profile</title>
+    <title>Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #eef1f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
-        .profile-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
+        /* LEFT SIDE */
+        .left {
+            width: 30%;
+            background: #1f2937;
+            color: #ffffff;
+            padding: 30px 20px;
             text-align: center;
-            width: 300px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .profile-card img {
-            width: 120px;
-            height: 120px;
+        .left img {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
+            border: 3px solid #ffffff;
         }
 
-        .profile-card h2 {
+        .left h2 {
+            margin: 10px 0 5px;
+        }
+
+        .left p {
+            font-size: 14px;
+            color: #d1d5db;
+        }
+
+        .section-title {
+            margin-top: 25px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #374151;
+            padding-bottom: 5px;
+            text-align: left;
+        }
+
+        .left ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            text-align: left;
+        }
+
+        .left ul li {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        /* RIGHT SIDE */
+        .right {
+            width: 70%;
+            padding: 30px;
+        }
+
+        .right h3 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .right p {
+            font-size: 14px;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job h4 {
             margin: 0;
-            color: #333;
+            font-size: 15px;
+            color: #111827;
         }
 
-        .profile-card p {
-            color: #666;
+        .job span {
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #e5e7eb;
+            color: #111827;
+            padding: 6px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin: 5px 5px 0 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="profile-card">
+<div class="container">
+
+    <!-- LEFT COLUMN -->
+    <div class="left">
         <img src="cat.jpg" alt="Profile Photo">
         <h2>Pa Pa Win Lwin</h2>
-        <p>5CS(B)</p>
+        <p>University Student</p>
+
+        <div class="section-title">CONTACT</div>
+        <ul>
+            <li>Email: papawinlwin@gmail.com</li>
+            <li>Phone: +95 900000000</li>
+            <li>Location: Myanmar</li>
+        </ul>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right">
+        <h3>EDUCATION</h3>
+        <div class="job">
+            <h4>Bachelor of Computer Science</h4>
+            <span>Computer University | 2019 – Present</span>
+            <p>
+                Relevant coursework: Programming Fundamentals, Data Structures,
+                Web Development, Natural Language Processing.
+            </p>
+        </div>
+
+        <h3>PROJECTS</h3>
+        <div class="job">
+            <h4>Personal Profile Website</h4>
+            <span>HTML, CSS</span>
+            <p>
+                Designed and deployed a responsive personal profile website showcasing
+                education, and projects.
+            </p>
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
